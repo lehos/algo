@@ -39,6 +39,8 @@ const rl = createInterface({
 rl.on('line', (line: string) => {
   const res = checkMatchingBrackets(line)
   console.log(res === 0 ? 'Success' : res)
+}).on('close', () => {
+  process.exit(0)
 })
 
 // to run in terminal:
