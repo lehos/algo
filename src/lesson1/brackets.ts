@@ -29,19 +29,3 @@ export function checkMatchingBrackets(input: string): number {
 
   return stack.length === 0 ? 0 : stack[0].index
 }
-
-// const { createInterface } = require('readline')
-// const rl = createInterface({
-//   input: process.stdin,
-//   output: process.stdout,
-// })
-//
-// rl.on('line', (line: string) => {
-//   const res = checkMatchingBrackets(line)
-//   console.log(res === 0 ? 'Success' : res)
-// }).on('close', () => {
-//   process.exit(0)
-// })
-
-// to run in terminal: uncomment above and
-// tsnd ./src/lesson1/brackets.ts

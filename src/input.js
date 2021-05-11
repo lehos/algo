@@ -10,3 +10,6 @@ rl.on('line', (line) => {
 }).on('close', () => {
   process.exit(0)
 })
+
+// to run in terminal
+// tsnd ./src/lesson1/brackets.ts
